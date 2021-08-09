@@ -8,6 +8,9 @@ require "csv"
 ## ARGV 0: relative folder path of csv table files with following /, eg: ../../Desktop/postgres_dump/
 ## ARGV 1: search term, eg: "Test"
 
+# Execution Example:
+## $ ruby columns_containing_string.rb ../../../Desktop/postgres_dump/ "DRÄGER"
+
 def get_columns_of_files(folder_paths, table_csv_folder_path)
   columns_hash = {}
 
